@@ -24,5 +24,8 @@
     <Compile Remove="Templates\FunPage.cs" />
     <Compile Remove="FileTemplates\SomethingView.cs" />
     <Compile Remove="FileTemplates\SomethingView.UI.cs" />
-  </ItemGroup>
+  </ItemGroup>  
+  <Target Name="AfterBuilding" AfterTargets="Build">
+    <Exec Command="'/Applications/Visual Studio.app/Contents/MacOS/vstool' setup pack ExtensionSample.dll" WorkingDirectory="$(TargetDir)" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
 </Project>
