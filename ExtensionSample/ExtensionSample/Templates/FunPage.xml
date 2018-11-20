@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<Template>
+    <!-- Template Header -->
+    <TemplateConfiguration>
+        <_Name>Fun Page with PageModel</_Name>
+        <_Category>Fun Pages</_Category>
+        <Icon>md-html-file-icon</Icon>
+        <LanguageName>C#</LanguageName>
+        <DefaultFilename>MyPage</DefaultFilename>
+        <_Description>Creates a Fun Xaml Page and a paired PageModel.</_Description>
+    </TemplateConfiguration>
+    <!-- Template Content -->
+    <TemplateFiles>
+        <File name="${Name}.xaml" DefaultExtension=".xaml" AddStandardHeader="False" BuildAction="EmbeddedResource" CustomTool="MSBuild:UpdateDesignTimeXaml" SubType="Designer" src="./FunPage.xaml" />
+        <File name="${Name}.xaml.cs" DependsOn="${Name}.xaml" AddStandardHeader="True" src="./FunPage.xaml.cs" />
+        <File name="${Name}Model.cs" AddStandardHeader="True" src="./FunModel.cs" />
+    </TemplateFiles>
+</Template>

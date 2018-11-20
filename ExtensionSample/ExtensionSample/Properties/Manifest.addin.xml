@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ExtensionModel>
-    <Runtime>
-    </Runtime>
+    <Extension path="/MonoDevelop/Ide/FileTemplates">
+        <FileTemplate id="FunPageTemplate" file="Templates/FunPage.xml" />
+    </Extension>
 </ExtensionModel>
