@@ -6,22 +6,23 @@
     <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Templates\" />
+    <Folder Include="FileTemplates\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Templates\FunPage.xaml" />
     <None Remove="Templates\FunPage.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AddinFile Include="Templates\FunPage.xml" />
+    <AddinFile Include="FileTemplates\DependentFile.xml" />
+    <AddinFile Include="FileTemplates\SomethingView.cs" />
+    <AddinFile Include="FileTemplates\SomethingView.UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Templates\FunPage.xaml.cs" />
     <Compile Remove="Templates\FunPageModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Templates\FunPageModel.cs" />
-    <EmbeddedResource Include="Templates\FunPage.xaml.cs" />
-    <EmbeddedResource Include="Templates\FunPage.xaml" />
+    <Compile Remove="Templates\FunPage.UI.cs" />
+    <Compile Remove="Templates\FunPage.cs" />
+    <Compile Remove="FileTemplates\SomethingView.cs" />
+    <Compile Remove="FileTemplates\SomethingView.UI.cs" />
   </ItemGroup>
 </Project>

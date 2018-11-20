@@ -33,7 +33,7 @@ using Mono.Addins.Description;
     Version = "1.0"
 )]
 
-[assembly: AddinName("ExtensionSample")]
+[assembly: AddinName("niobo-extensions")]
 [assembly: AddinCategory("IDE extensions")]
-[assembly: AddinDescription("ExtensionSample")]
-[assembly: AddinAuthor("Mikayla Hutchinson")]
+[assembly: AddinDescription("My extensions for VS4Mac")]
+[assembly: AddinAuthor("Łukasz Ławicki")]

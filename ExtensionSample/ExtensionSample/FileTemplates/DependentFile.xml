@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<Template>
+    <!-- Template Header -->
+    <TemplateConfiguration>
+        <_Name>Dependent file</_Name>
+        <_Category>niobo</_Category>
+        <Icon>md-html-file-icon</Icon>
+        <LanguageName>C#</LanguageName>
+        <DefaultFilename>DependentFile</DefaultFilename>
+        <_Description>Creates two files. On is depending on the other.</_Description>
+    </TemplateConfiguration>
+    <!-- Template Content -->
+    <TemplateFiles>
+        <File name="${Name}.cs" AddStandardHeader="False" BuildAction="Compile" src="./SomethingView.cs" />
+        <File name="${Name}.UI.cs" AddStandardHeader="false" BuildAction="Compile" src="./SomethingView.UI.cs" DependsOn="${Name}.cs"/>
+    </TemplateFiles>
+</Template>
