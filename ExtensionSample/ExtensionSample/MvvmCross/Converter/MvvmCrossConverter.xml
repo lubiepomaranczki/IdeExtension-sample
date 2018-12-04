@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<Template>
+    <!-- Template Header -->
+    <TemplateConfiguration>
+        <_Name>MvvmCrossConverter</_Name>
+        <_Category>MvvmCross</_Category>
+        <Icon>md-html-file-icon</Icon>
+        <LanguageName>C#</LanguageName>
+        <DefaultFilename>MvvmCrossConverter</DefaultFilename>
+        <_Description>Creates MVVMCross converter.</_Description>
+    </TemplateConfiguration>
+    <!-- Template Content -->
+    <TemplateFiles>
+        <File name="${Name}.cs" AddStandardHeader="False" BuildAction="Compile" src="./MvvmCrossConverter.cs" />
+    </TemplateFiles>
+</Template>

@@ -7,15 +7,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FileTemplates\" />
+    <Folder Include="MvvmCross\" />
+    <Folder Include="MvvmCross\Converter\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Templates\FunPage.xaml" />
     <None Remove="Templates\FunPage.xml" />
+    <None Remove="MvvmCross\Converter\MvvmCrossConverter.xft.xml" />
   </ItemGroup>
   <ItemGroup>
     <AddinFile Include="FileTemplates\DependentFile.xml" />
     <AddinFile Include="FileTemplates\SomethingView.cs" />
     <AddinFile Include="FileTemplates\SomethingView.UI.cs" />
+    <AddinFile Include="MvvmCross\Converter\MvvmCrossConverter.cs" />
+    <AddinFile Include="MvvmCross\Converter\MvvmCrossConverter.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Templates\FunPage.xaml.cs" />
@@ -24,6 +29,7 @@
     <Compile Remove="Templates\FunPage.cs" />
     <Compile Remove="FileTemplates\SomethingView.cs" />
     <Compile Remove="FileTemplates\SomethingView.UI.cs" />
+    <Compile Remove="MvvmCross\Converter\MvvmCrossConverter.cs" />
   </ItemGroup>  
   <Target Name="AfterBuilding" AfterTargets="Build">
     <Exec Command="'/Applications/Visual Studio.app/Contents/MacOS/vstool' setup pack ExtensionSample.dll" WorkingDirectory="$(TargetDir)" Condition="'$(Configuration)' == 'Release'" />

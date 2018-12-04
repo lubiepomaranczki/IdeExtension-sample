@@ -2,5 +2,6 @@
 <ExtensionModel>
     <Extension path="/MonoDevelop/Ide/FileTemplates">
         <FileTemplate id="DependentTemplate" file="FileTemplates/DependentFile.xml" />
+        <FileTemplate id="MvvmCrossConverter" file="MvvmCross/Converter/MvvmCrossConverter.xml" />
     </Extension>
 </ExtensionModel>
